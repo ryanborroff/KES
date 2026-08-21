@@ -28,7 +28,7 @@ function ProductCard({ product, index }) {
           <p className="text-base text-base-muted leading-relaxed">{product.tagline}</p>
         </div>
 
-        <div className="border-2 border-dashed border-base-border h-28 flex items-center justify-center">
+        <div className="border-2 border-dashed border-base-fg/40 bg-base-bg h-28 flex items-center justify-center">
           <span className="text-sm font-medium text-base-muted">
             [SCREENSHOT: {product.name}]
           </span>

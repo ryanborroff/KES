@@ -1,14 +1,31 @@
 import ThemeToggle from './ThemeToggle'
+import useActiveSection from '../hooks/useActiveSection'
+
+const NAV_LINKS = [
+  { id: 'products', label: 'Products' },
+  { id: 'about', label: 'About' },
+  { id: 'contact', label: 'Contact' },
+]
 
 export default function Hero({ theme, setTheme }) {
+  const active = useActiveSection(['products', 'about', 'contact'])
+
   return (
     <header className="relative border-b-2 border-base-border">
       <nav className="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between py-6">
         <span className="text-sm font-bold tracking-tight">JOMO</span>
-        <div className="hidden sm:flex items-center gap-8 text-sm font-semibold text-base-muted">
-          <a href="#products" className="hover:text-base-fg transition-colors">Products</a>
-          <a href="#about" className="hover:text-base-fg transition-colors">About</a>
-          <a href="#contact" className="hover:text-base-fg transition-colors">Contact</a>
+        <div className="hidden sm:flex items-center gap-8 text-sm font-semibold">
+          {NAV_LINKS.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className={`border-b-2 pb-1 transition-colors ${
+                active === id ? 'border-base-fg text-base-fg' : 'border-transparent text-base-muted hover:text-base-fg'
+              }`}
+            >
+              {label}
+            </a>
+          ))}
         </div>
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </nav>

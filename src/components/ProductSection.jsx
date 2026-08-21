@@ -34,20 +34,20 @@ export default function ProductSection({ product, index }) {
                   <div className="text-sm font-semibold mb-1" style={{ color: product.accent }}>
                     {f.title}
                   </div>
-                  <p className="text-base text-base-muted leading-relaxed">{f.detail}</p>
+                  <p className="text-base text-base-fg leading-relaxed">{f.detail}</p>
                 </div>
               ))}
             </div>
 
             <button
-              className="text-sm font-semibold px-5 py-3 border-2 transition-colors"
-              style={{ borderColor: product.accent, color: product.accent }}
+              className="text-sm font-bold px-6 py-3.5 border-2 transition-opacity hover:opacity-90"
+              style={{ backgroundColor: product.accent, borderColor: product.accent, color: '#fbf7ef' }}
             >
               {product.cta.label} &rarr;
             </button>
           </div>
 
-          <div className="border-2 border-dashed border-base-border aspect-[4/3] flex items-center justify-center bg-base-surface">
+          <div className="border-2 border-dashed border-base-fg/40 aspect-[4/3] flex items-center justify-center bg-base-bg">
             <span className="text-sm font-medium text-base-muted">
               [SCREENSHOT: {product.name}]
             </span>
