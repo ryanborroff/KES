@@ -3,7 +3,7 @@ export const products = [
   {
     id: 'kando',
     name: 'Kando',
-    accent: '#4ADE80',
+    accent: '#3F7D4F',
     accentClass: 'kando',
     tagline: 'A kanban board with nothing to configure.',
     description: 'Everything you need, nothing you don\'t.',
@@ -28,7 +28,7 @@ export const products = [
   {
     id: 'kitchen-wizz',
     name: 'Kitchen Wizz',
-    accent: '#F59E0B',
+    accent: '#D97B3F',
     accentClass: 'kitchen',
     tagline: 'Save recipes from anywhere. Plan the week in minutes.',
     description: 'One place for every recipe you\'ve ever saved.',
@@ -53,7 +53,7 @@ export const products = [
   {
     id: 'boop',
     name: 'Boop',
-    accent: '#F472B6',
+    accent: '#D65A7A',
     accentClass: 'boop',
     tagline: 'Spot it. Boop it. Track every car you\'ve ever found.',
     description: 'A car-spotting game for the backseat.',
@@ -78,7 +78,7 @@ export const products = [
   {
     id: 'chroma',
     name: 'Chroma',
-    accent: '#60A5FA',
+    accent: '#3B6FA0',
     accentClass: 'chroma',
     tagline: 'Secure hosting and review for working filmmakers.',
     description: 'Client-ready delivery, without the compression artifacts.',
