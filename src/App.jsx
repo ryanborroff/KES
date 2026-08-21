@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 import { products } from './data/products'
 
 export default function App() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
