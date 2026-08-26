@@ -49,7 +49,7 @@ export default function ProductGrid() {
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
         <div className="text-sm font-semibold text-base-muted mb-3">Products</div>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-14 max-w-xl">
-          Four products. One studio.
+          Five products. One studio.
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-base-border sm:gap-6 sm:bg-transparent">
           {products.map((product, i) => (
