@@ -35,6 +35,14 @@ export function ProductIcon({ id, className = 'w-5 h-5' }) {
           <path d="M7 20h10" strokeLinecap="round" />
         </svg>
       )
+    case 'greg':
+      return (
+        <svg {...common}>
+          <rect x="4" y="3" width="16" height="18" rx="1" />
+          <path d="M8 8h8M8 12h8M8 16h5" strokeLinecap="round" />
+          <path d="M6.5 8l.5.5L8 7" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      )
     default:
       return null
   }

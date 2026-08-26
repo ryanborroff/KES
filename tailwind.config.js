@@ -20,6 +20,7 @@ export default {
         kitchen: '#D97B3F',
         boop: '#D65A7A',
         chroma: '#3B6FA0',
+        greg: '#8A6FB3',
       },
       borderRadius: {
         sharp: '2px',

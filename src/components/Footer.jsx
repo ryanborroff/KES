@@ -1,4 +1,5 @@
 import { GithubIcon, XIcon } from './Icons'
+import { products } from '../data/products'
 
 export default function Footer() {
   return (
@@ -39,7 +40,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6 border-t-2 border-base-border text-sm font-medium text-base-muted">
           <span>&copy; {new Date().getFullYear()} JOMO. All rights reserved.</span>
-          <span>Kando &middot; Kitchen Wizz &middot; Boop &middot; Chroma</span>
+          <span>{products.map((p) => p.name).join(' · ')}</span>
         </div>
       </div>
     </footer>

@@ -100,4 +100,29 @@ export const products = [
     cta: { label: 'Sign up', kind: 'signup' },
     icon: 'chroma',
   },
+  {
+    id: 'greg',
+    name: 'Greg',
+    accent: '#8A6FB3',
+    accentClass: 'greg',
+    tagline: 'A no-frills task list that actually stays out of your way.',
+    description: 'One list, no distractions.',
+    category: 'Productivity',
+    features: [
+      {
+        title: 'Just a list',
+        detail: 'No projects, no tags, no priority matrix. Type a task, check it off.',
+      },
+      {
+        title: 'Fast capture',
+        detail: 'Global shortcut opens a blank line anywhere on your desktop. Type and hit enter.',
+      },
+      {
+        title: 'Clears itself',
+        detail: 'Finished tasks fade out at the end of the day. Nothing to archive, nothing to manage.',
+      },
+    ],
+    cta: { label: 'Download for macOS', kind: 'download' },
+    icon: 'greg',
+  },
 ]
