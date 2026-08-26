@@ -36,7 +36,8 @@ export default function Hero({ theme, setTheme }) {
           JOMO
         </h1>
         <p className="text-xl md:text-2xl text-base-muted max-w-xl leading-relaxed">
-          Independent software, built with care. Four small products, no growth team, no dark patterns.
+          Independent software, built with care for people who'd rather enjoy real life.
+          Five little products. No dark intent.
         </p>
       </div>
     </header>
