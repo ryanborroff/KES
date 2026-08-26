@@ -38,7 +38,7 @@ export default function Hero({ theme, setTheme }) {
         <p className="text-xl md:text-2xl text-base-muted max-w-xl leading-relaxed">
           Independent software, built with care.
           <br />
-          For people who'd rather enjoy real life.
+          For people who'd rather be doing something else.
           <br />
           Five little products. No dark intent.
         </p>
