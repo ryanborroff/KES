@@ -34,6 +34,22 @@ export const products = [
     cta: { label: 'Get the app', kind: 'appstore' },
   },
   {
+    id: 'eatlog',
+    name: 'EatLog',
+    accent: '#0F7A4F',
+    kind: 'Food diary',
+    platform: 'iOS',
+    tagline: 'Say it. We’ll log it.',
+    description:
+      'A voice-first food diary. Tap the mic, say what you ate in your own words, and EatLog works out the calories and macros. No database searching, no weighing, no typing.',
+    features: [
+      { title: 'Just say it', detail: '“Two eggs, sourdough with butter and a flat white.” Logged in seconds.' },
+      { title: 'Fix it by talking', detail: 'Say “actually it was tuna” to correct an entry. No delete and re-log.' },
+      { title: 'Ask your diary', detail: '“How much protein have I had today?” Answers from your own log.' },
+    ],
+    cta: { label: 'Get the app', kind: 'appstore' },
+  },
+  {
     id: 'chroma',
     name: 'Chroma',
     accent: '#3B6FA0',

@@ -19,6 +19,13 @@ export function ProductIcon({ id, className = 'w-5 h-5' }) {
           <circle cx="16.5" cy="19" r="1.4" />
         </svg>
       )
+    case 'eatlog':
+      return (
+        <svg {...common}>
+          <rect x="9" y="3" width="6" height="11" rx="3" />
+          <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M9 21h6" strokeLinecap="round" />
+        </svg>
+      )
     case 'chroma':
       return (
         <svg {...common}>
