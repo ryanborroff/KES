@@ -60,7 +60,7 @@ export const products = [
       'Share cuts that look the way you graded them. Clients leave notes on the exact frame, and you stay in control of who sees and downloads what.',
     features: [
       { title: 'Frame-accurate notes', detail: 'Timecoded comments and stacked versions. No re-uploads for one note.' },
-      { title: 'High-bitrate playback', detail: 'Streaming tuned for colour-critical review, not just watching.' },
+      { title: 'High-bitrate playback', detail: 'Streaming tuned for grade-critical review, not just watching.' },
       { title: 'Access you control', detail: 'Expiring links, watermarks and download rights per client.' },
     ],
     cta: { label: 'Start a project', kind: 'signup' },
