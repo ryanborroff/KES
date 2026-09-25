@@ -11,7 +11,7 @@ export default function Footer() {
     <footer id="contact" className="border-t">
       <div className="max-w-6xl mx-auto px-6 md:px-10 pt-20 md:pt-28 pb-10">
         <p className="text-sm font-medium text-base-muted mb-4">Contact</p>
-        <h2 className="font-serif text-5xl md:text-7xl leading-none tracking-tight mb-6">Say hello.</h2>
+        <h2 className="font-bold tracking-tight text-5xl md:text-7xl leading-none mb-6">Say hello.</h2>
         <p className="text-lg text-base-muted max-w-lg mb-10">
           Questions, bug reports, or a feature you think earns its place. Every email gets read by the person who
           wrote the code.

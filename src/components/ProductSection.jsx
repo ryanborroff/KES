@@ -34,7 +34,7 @@ export default function ProductSection({ product, index, total }) {
             </span>
           </div>
 
-          <h2 id={`${product.id}-title`} className="font-serif text-5xl md:text-6xl leading-none tracking-tight mb-5">
+          <h2 id={`${product.id}-title`} className="font-bold tracking-tight text-5xl md:text-6xl leading-none mb-5">
             {product.name}
           </h2>
           <p className="text-xl md:text-2xl leading-snug mb-5">{product.tagline}</p>

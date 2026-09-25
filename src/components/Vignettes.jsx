@@ -24,42 +24,6 @@ function Phone({ children }) {
   )
 }
 
-function Kando() {
-  const columns = [
-    { name: 'To do', cards: ['Write release notes', 'Reply to Sam'] },
-    { name: 'Doing', cards: ['Fix sync on wake'], active: true },
-    { name: 'Done', cards: ['Ship 1.4', 'Update icon'], done: true },
-  ]
-  return (
-    <Window title="Kando — This week">
-      <div className="grid grid-cols-3 gap-3">
-        {columns.map((col) => (
-          <div key={col.name} className="flex flex-col gap-2">
-            <div className="text-[11px] font-semibold text-base-muted">
-              {col.name} <span className="font-normal">{col.cards.length}</span>
-            </div>
-            {col.cards.map((card) => (
-              <div
-                key={card}
-                className={`rounded-md border bg-base-bg px-2.5 py-2 text-[11px] sm:text-xs leading-snug ${
-                  col.done ? 'text-base-muted line-through' : ''
-                }`}
-                style={col.active ? { borderColor: 'var(--accent)', boxShadow: '0 0 0 1px var(--accent)' } : undefined}
-              >
-                {card}
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-      <div className="mt-4 flex items-center gap-2 text-[11px] text-base-muted">
-        <kbd className="font-mono rounded border px-1.5 py-0.5">N</kbd> new card
-        <kbd className="font-mono rounded border px-1.5 py-0.5 ml-2">→</kbd> move
-      </div>
-    </Window>
-  )
-}
-
 function KitchenWizz() {
   const days = [
     ['Mon', 'Miso salmon'],
@@ -97,7 +61,7 @@ function Boop() {
         <span className="text-xs font-semibold">My garage</span>
         <span className="text-[11px] text-base-muted">🔥 6-day streak</span>
       </div>
-      <div className="font-serif text-5xl leading-none mb-1">37</div>
+      <div className="font-bold tracking-tight text-5xl leading-none mb-1">37</div>
       <div className="text-[11px] text-base-muted mb-4">cars spotted</div>
       <div className="grid grid-cols-3 gap-1.5 mb-4">
         {cars.map((car, i) => (
@@ -150,52 +114,10 @@ function Chroma() {
   )
 }
 
-function Greg() {
-  const tasks = [
-    ['Call the dentist', true],
-    ['Renew passport', false],
-    ['Buy birthday card', true],
-    ['Book train for Friday', false],
-  ]
-  return (
-    <div className="mx-auto max-w-sm">
-      <Window title="Greg">
-        <ul className="flex flex-col">
-          {tasks.map(([task, done]) => (
-            <li key={task} className="flex items-center gap-3 py-2 border-b last:border-b-0 text-sm">
-              <span
-                className="h-4 w-4 rounded-full border-2 flex items-center justify-center"
-                style={done ? { borderColor: 'var(--accent)', backgroundColor: 'var(--accent)' } : undefined}
-              >
-                {done && (
-                  <svg viewBox="0 0 12 12" className="h-2.5 w-2.5 text-white" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M2.5 6.5l2.2 2L9.5 3.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                )}
-              </span>
-              <span className={done ? 'text-base-muted line-through' : ''}>{task}</span>
-            </li>
-          ))}
-          <li className="flex items-center gap-3 pt-2 text-sm text-base-muted">
-            <span className="h-4 w-4 rounded-full border-2 border-dashed" />
-            <span>
-              Type a task
-              <span className="ml-0.5 inline-block h-4 w-px align-middle animate-pulse" style={{ backgroundColor: 'var(--accent)' }} />
-            </span>
-          </li>
-        </ul>
-      </Window>
-      <p className="mt-3 text-center text-xs text-base-muted">Checked tasks clear at midnight.</p>
-    </div>
-  )
-}
-
 const VIGNETTES = {
-  kando: Kando,
   'kitchen-wizz': KitchenWizz,
   boop: Boop,
   chroma: Chroma,
-  greg: Greg,
 }
 
 export default function Vignette({ product }) {

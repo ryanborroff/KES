@@ -2,22 +2,6 @@
 // Accents are dark enough to carry white button text at WCAG AA.
 export const products = [
   {
-    id: 'kando',
-    name: 'Kando',
-    accent: '#3F7D4F',
-    kind: 'Kanban board',
-    platform: 'macOS',
-    tagline: 'A kanban board with nothing to configure.',
-    description:
-      'Open it, add a card, drag it across. That is the whole manual. Kando is for people who want to see their work, not manage a tool that manages their work.',
-    features: [
-      { title: 'Ready in ten seconds', detail: 'No templates, no onboarding, no workspace to name.' },
-      { title: 'Keyboard-first', detail: 'Every action has a shortcut. Your mouse can take the day off.' },
-      { title: 'Works offline', detail: 'Local-first, syncs quietly when you are back online.' },
-    ],
-    cta: { label: 'Download for macOS', kind: 'download' },
-  },
-  {
     id: 'kitchen-wizz',
     name: 'Kitchen Wizz',
     accent: '#B35C24',
@@ -64,21 +48,5 @@ export const products = [
       { title: 'Access you control', detail: 'Expiring links, watermarks and download rights per client.' },
     ],
     cta: { label: 'Start a project', kind: 'signup' },
-  },
-  {
-    id: 'greg',
-    name: 'Greg',
-    accent: '#7456A3',
-    kind: 'Task list',
-    platform: 'macOS',
-    tagline: 'One list. It stays out of your way.',
-    description:
-      'No projects, no tags, no priority matrix. Hit a shortcut, type the thing, hit enter. Greg remembers so you don’t have to.',
-    features: [
-      { title: 'Just a list', detail: 'Type a task, check it off. That’s it.' },
-      { title: 'Capture from anywhere', detail: 'A global shortcut opens a blank line over whatever you are doing.' },
-      { title: 'Clears itself', detail: 'Finished tasks fade at the end of the day. Nothing to archive.' },
-    ],
-    cta: { label: 'Download for macOS', kind: 'download' },
   },
 ]
