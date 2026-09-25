@@ -27,7 +27,7 @@ export default function About() {
         <div className="lg:col-span-5">
           <p className="text-sm font-medium text-base-muted mb-4">About</p>
           <h2 className="font-bold tracking-tight text-5xl md:text-6xl leading-none mb-8">
-            One person. No roadmap theater.
+            One person. No roadmap theatre.
           </h2>
           <div className="flex flex-col gap-5 text-base-muted leading-relaxed max-w-md">
             <p>
