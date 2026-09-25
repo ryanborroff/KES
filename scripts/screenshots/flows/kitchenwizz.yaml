@@ -1,0 +1,68 @@
+# Kitchen Wizz: convert a recipe, then the recipe library, planner and
+# groceries. Signs in with KW_EMAIL / KW_PASSWORD so the library, planner
+# and shopping list show that account's content.
+appId: com.convertcook.app
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: allow
+
+# Onboarding appears on a fresh install.
+- tapOn:
+    text: "Skip"
+    optional: true
+
+- openLink: "kitchen-wizz://sign-in"
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible: "Welcome back"
+    timeout: 20000
+- tapOn: "you@example.com"
+- inputText: ${KW_EMAIL}
+- tapOn: "Your password"
+- inputText: ${KW_PASSWORD}
+- hideKeyboard
+- tapOn: "Sign in"
+
+# Tab bar items read "<Title>, tab, N of 5" to accessibility.
+- extendedWaitUntil:
+    visible: "Convert(, tab.*)?"
+    timeout: 30000
+- tapOn: "Convert(, tab.*)?"
+- tapOn: "Paste a recipe or recipe URL here"
+- inputText: ${KW_RECIPE_URL}
+- hideKeyboard
+- waitForAnimationToEnd
+- takeScreenshot: 01-convert
+
+- tapOn: "Convert recipe"
+- extendedWaitUntil:
+    visible: "Save recipe|Saved"
+    timeout: 90000
+- waitForAnimationToEnd
+- takeScreenshot: 02-recipe
+
+# The recipe opens over the tabs, so jump to each tab by deep link.
+- openLink: "kitchen-wizz://recipes"
+- tapOn:
+    text: "Open"
+    optional: true
+- waitForAnimationToEnd
+- takeScreenshot: 03-recipes
+
+- openLink: "kitchen-wizz://planner"
+- tapOn:
+    text: "Open"
+    optional: true
+- waitForAnimationToEnd
+- takeScreenshot: 04-planner
+
+- openLink: "kitchen-wizz://shopping"
+- tapOn:
+    text: "Open"
+    optional: true
+- waitForAnimationToEnd
+- takeScreenshot: 05-groceries

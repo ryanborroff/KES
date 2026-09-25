@@ -1,0 +1,60 @@
+# EatLog: today's diary, the voice logger, history, insights and "ask your
+# diary". Signs in with EATLOG_EMAIL / EATLOG_PASSWORD; use an account that
+# already has a few days of meals logged so every screen has content.
+appId: com.ryanfborroff.EatLog
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: allow
+
+- tapOn:
+    text: "Skip"
+    optional: true
+- extendedWaitUntil:
+    visible: "Sign in"
+    timeout: 20000
+- tapOn: "Email"
+- inputText: ${EATLOG_EMAIL}
+- tapOn: "Password"
+- inputText: ${EATLOG_PASSWORD}
+- hideKeyboard
+- tapOn: "Sign in"
+
+# Onboarding can follow a first sign-in.
+- tapOn:
+    text: "Skip"
+    optional: true
+
+# Tab bar items read "<Title>, tab, N of 4" to accessibility.
+- extendedWaitUntil:
+    visible: "Today(, tab.*)?"
+    timeout: 30000
+- waitForAnimationToEnd
+- takeScreenshot: 01-today
+
+- tapOn: "Log what you've eaten"
+- extendedWaitUntil:
+    visible: "Tap the mic when you're done"
+    timeout: 10000
+- takeScreenshot: 02-voice-log
+- tapOn: "Close"
+
+- tapOn: "History(, tab.*)?"
+- waitForAnimationToEnd
+- takeScreenshot: 03-history
+
+- tapOn: "Insights(, tab.*)?"
+- waitForAnimationToEnd
+- takeScreenshot: 04-insights
+
+- openLink: "eatlog://ask"
+- tapOn:
+    text: "Open"
+    optional: true
+- tapOn: "Ask about your diary"
+- inputText: ${EATLOG_QUESTION}
+- pressKey: Enter
+- waitForAnimationToEnd:
+    timeout: 20000
+- takeScreenshot: 05-ask
