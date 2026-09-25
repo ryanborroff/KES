@@ -10,7 +10,7 @@ export function ProductIcon({ id, className = 'w-5 h-5' }) {
           <rect x="16" y="4" width="5" height="13" rx="1" />
         </svg>
       )
-    case 'kitchen':
+    case 'kitchen-wizz':
       return (
         <svg {...common}>
           <path d="M6 3v7a3 3 0 0 0 3 3v8" strokeLinecap="round" />
