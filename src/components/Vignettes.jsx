@@ -56,7 +56,7 @@ function KitchenWizz() {
 function Boop() {
   const players = [
     ['Jamie', 14],
-    ['Mum', 11],
+    ['Grandma', 11],
     ['Dad', 9],
   ]
   const cars = [
