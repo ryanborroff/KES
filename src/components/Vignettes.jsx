@@ -84,6 +84,48 @@ function Boop() {
   )
 }
 
+function EatLog() {
+  const items = [
+    ['Scrambled eggs', '2 large', 182],
+    ['Sourdough, buttered', '2 slices', 290],
+    ['Flat white', 'large', 170],
+  ]
+  return (
+    <Phone>
+      <div className="flex items-baseline justify-between mb-3">
+        <span className="text-xs font-semibold">Breakfast</span>
+        <span className="text-[11px] text-base-muted">1,248 / 2,100 kcal</span>
+      </div>
+      <div className="h-1.5 rounded-full bg-base-line mb-4 overflow-hidden">
+        <div className="h-full w-[59%] rounded-full" style={{ backgroundColor: 'var(--accent)' }} />
+      </div>
+      <div
+        className="ml-auto mb-3 max-w-[85%] rounded-2xl rounded-br-md px-3 py-2 text-xs leading-snug text-white"
+        style={{ backgroundColor: 'var(--accent)' }}
+      >
+        “Two scrambled eggs, two slices of sourdough with butter and a large flat white.”
+      </div>
+      <div className="flex flex-col gap-1.5 mb-4">
+        {items.map(([name, qty, kcal]) => (
+          <div key={name} className="flex items-center gap-3 rounded-lg border bg-base-bg px-3 py-2">
+            <div className="min-w-0">
+              <div className="text-xs truncate">{name}</div>
+              <div className="text-[10px] text-base-muted">{qty}</div>
+            </div>
+            <span className="ml-auto text-xs font-semibold tabular-nums">{kcal}</span>
+          </div>
+        ))}
+      </div>
+      <div className="mx-auto h-12 w-12 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: 'var(--accent)' }}>
+        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="9" y="3" width="6" height="11" rx="3" />
+          <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" strokeLinecap="round" />
+        </svg>
+      </div>
+    </Phone>
+  )
+}
+
 function Chroma() {
   const markers = [18, 41, 44, 72]
   return (
@@ -117,6 +159,7 @@ function Chroma() {
 const VIGNETTES = {
   'kitchen-wizz': KitchenWizz,
   boop: Boop,
+  eatlog: EatLog,
   chroma: Chroma,
 }
 
