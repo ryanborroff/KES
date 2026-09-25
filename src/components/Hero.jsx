@@ -6,7 +6,7 @@ export default function Hero() {
         Useful software that doesn’t need <em className="text-base-muted">your attention.</em>
       </h1>
       <p className="text-lg md:text-xl text-base-muted leading-relaxed max-w-xl mb-16 md:mb-20">
-        JOMO makes five small apps. Each one does a single job well, then gets out of the way — so you can get
+        JOMO makes three small apps. Each one does a single job well, then gets out of the way — so you can get
         back to whatever you’d rather be doing.
       </p>
     </section>

@@ -2,14 +2,6 @@
 export function ProductIcon({ id, className = 'w-5 h-5' }) {
   const common = { className, fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, viewBox: '0 0 24 24' }
   switch (id) {
-    case 'kando':
-      return (
-        <svg {...common}>
-          <rect x="3" y="4" width="5" height="16" rx="1" />
-          <rect x="9.5" y="4" width="5" height="10" rx="1" />
-          <rect x="16" y="4" width="5" height="13" rx="1" />
-        </svg>
-      )
     case 'kitchen-wizz':
       return (
         <svg {...common}>
@@ -33,14 +25,6 @@ export function ProductIcon({ id, className = 'w-5 h-5' }) {
           <rect x="3" y="5" width="18" height="12" rx="1" />
           <path d="M9 9l5 3-5 3V9z" fill="currentColor" stroke="none" />
           <path d="M7 20h10" strokeLinecap="round" />
-        </svg>
-      )
-    case 'greg':
-      return (
-        <svg {...common}>
-          <rect x="4" y="3" width="16" height="18" rx="1" />
-          <path d="M8 8h8M8 12h8M8 16h5" strokeLinecap="round" />
-          <path d="M6.5 8l.5.5L8 7" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       )
     default:
