@@ -11,9 +11,9 @@ export const products = [
     description:
       'Paste a link from anywhere and get a clean recipe card. Drop recipes onto the week, and the shopping list writes itself.',
     features: [
-      { title: 'Save from any site', detail: 'Just the ingredients and the steps. No ads, no scrolling.' },
+      { title: 'Save from the web', detail: 'Just the ingredients and the steps. No ads, no scrolling.' },
       { title: 'Plan the week', detail: 'Drag recipes onto days, get one combined shopping list.' },
-      { title: 'Cook without signal', detail: 'Your recipe box lives on your phone, not only in the cloud.' },
+      { title: 'Cook offline', detail: 'Your recipe box lives on your phone, not just in the cloud.' },
     ],
     cta: { label: 'Get the app', kind: 'appstore' },
   },
@@ -41,7 +41,7 @@ export const products = [
     platform: 'iOS',
     tagline: 'Say it. We’ll log it.',
     description:
-      'A voice-first food diary. Tap the mic, say what you ate in your own words, and EatLog works out the calories and macros. No database searching, no weighing, no typing.',
+      'A voice-first food diary. Tap the mic, say what you ate in your own words, and EatLog works out the calories and macros. No database searching, weighing every ingredient or typing it all out.',
     features: [
       { title: 'Just say it', detail: '“Two eggs, sourdough with butter and a flat white.” Logged in seconds.' },
       { title: 'Fix it by talking', detail: 'Say “actually it was tuna” to correct an entry. No delete and re-log.' },
@@ -60,7 +60,7 @@ export const products = [
       'Share cuts that look the way you graded them. Clients leave notes on the exact frame, and you stay in control of who sees and downloads what.',
     features: [
       { title: 'Frame-accurate notes', detail: 'Timecoded comments and stacked versions. No re-uploads for one note.' },
-      { title: 'High-bitrate playback', detail: 'Streaming tuned for color-critical review, not just watching.' },
+      { title: 'High-bitrate playback', detail: 'Streaming tuned for colour-critical review, not just watching.' },
       { title: 'Access you control', detail: 'Expiring links, watermarks and download rights per client.' },
     ],
     cta: { label: 'Start a project', kind: 'signup' },

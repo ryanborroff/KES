@@ -11,7 +11,7 @@ const PRINCIPLES = [
   },
   {
     title: 'No dark patterns',
-    body: 'No streak-guilt notifications, no engagement tricks, no selling your attention to anyone.',
+    body: 'No guilt notifications, no engagement tricks, no selling your attention to anyone.',
   },
   {
     title: 'Answerable to users',
