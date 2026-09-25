@@ -1,51 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-bg: #f6f1e7;
-  --color-fg: #221c14;
-  --color-muted: #6f6252;
-  --color-border: #221c14;
-  --color-surface: #fbf7ef;
-}
-
+:root,
 html[data-theme='light'] {
-  --color-bg: #f6f1e7;
-  --color-fg: #221c14;
-  --color-muted: #6f6252;
-  --color-border: #221c14;
-  --color-surface: #fbf7ef;
+  --color-bg: #f4efe6;
+  --color-fg: #1d1a16;
+  --color-muted: #675e53;
+  --color-line: #d8cfc1;
+  --color-surface: #fbf8f2;
 }
 
 html[data-theme='dark'] {
-  --color-bg: #1c1712;
-  --color-fg: #f6f1e7;
-  --color-muted: #a89d8c;
-  --color-border: #4a4032;
-  --color-surface: #241e17;
+  --color-bg: #161412;
+  --color-fg: #f1ebe0;
+  --color-muted: #a59a8b;
+  --color-line: #38322b;
+  --color-surface: #1f1c19;
 }
 
 * {
-  border-color: var(--color-border);
+  border-color: var(--color-line);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-fg);
   font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.font-mono-label {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  letter-spacing: 0.04em;
+/* Product panel tint, derived from the section's --accent */
+.accent-panel {
+  background-color: color-mix(in srgb, var(--accent) 14%, var(--color-surface));
 }
 
 /* Scroll reveal */
@@ -58,6 +53,17 @@ body {
 .reveal.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 ::selection {
