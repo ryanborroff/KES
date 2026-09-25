@@ -1,0 +1,45 @@
+# Boop: setup, lobby, a game in progress with a few cars spotted, results.
+# If the room server is unreachable the app falls back to an offline solo
+# game, which gives the same screens.
+appId: com.ryanfborroff.boop-native
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: "Your Name"
+    timeout: 20000
+- tapOn: "e.g. Jamie"
+- inputText: ${BOOP_PLAYER}
+- hideKeyboard
+- waitForAnimationToEnd
+- takeScreenshot: 01-setup
+
+- tapOn: "Start Game"
+- extendedWaitUntil:
+    visible: "Start Game!"
+    timeout: 20000
+- waitForAnimationToEnd
+- takeScreenshot: 02-lobby
+
+- tapOn: "Start Game!"
+- extendedWaitUntil:
+    visible: "End Game"
+    timeout: 20000
+# Car buttons read "<Car>, N point(s)" to accessibility.
+- tapOn: "Mini Cooper, .*"
+- tapOn: "VW Beetle, .*"
+- tapOn: "Fiat 500, .*"
+- tapOn: "Mini Cooper, .*"
+- waitForAnimationToEnd
+- takeScreenshot: 03-game
+
+- tapOn: "End Game"
+# Confirm, in case ending the game asks first.
+- tapOn:
+    text: "End Game|End game|End|Yes"
+    optional: true
+- extendedWaitUntil:
+    visible: "Cars spotted"
+    timeout: 20000
+- waitForAnimationToEnd
+- takeScreenshot: 04-results
