@@ -23,7 +23,7 @@ export const products = [
     accent: '#B8446A',
     kind: 'Road trip game',
     platform: 'iOS',
-    tagline: 'The car-spotting race for road trips.',
+    tagline: 'The car-spotting game for road trips.',
     description:
       'Everyone joins on their own phone. Spot a Mini, shout “Boop!” and tap to score. Rarer cars are worth more, and whoever’s ahead when the timer runs out wins.',
     features: [
