@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import '@fontsource-variable/inter';
 
 @tailwind base;
 @tailwind components;
@@ -33,7 +33,7 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-fg);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Inter Variable', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.2s ease, color 0.2s ease;
 }

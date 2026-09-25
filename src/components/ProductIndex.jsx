@@ -13,7 +13,7 @@ export default function ProductIndex() {
                 className="group grid grid-cols-[2rem_1fr_auto] sm:grid-cols-[3rem_15rem_1fr_auto] items-center gap-x-4 py-5"
               >
                 <span className="font-mono text-xs text-base-muted">0{i + 1}</span>
-                <span className="flex items-center gap-3 whitespace-nowrap font-serif text-2xl md:text-3xl leading-none">
+                <span className="flex items-center gap-3 whitespace-nowrap font-bold tracking-tight text-2xl md:text-3xl leading-none">
                   <span
                     className="w-8 h-8 shrink-0 rounded-lg flex items-center justify-center text-white"
                     style={{ backgroundColor: product.accent }}

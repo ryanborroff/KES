@@ -61,7 +61,7 @@ function Boop() {
         <span className="text-xs font-semibold">My garage</span>
         <span className="text-[11px] text-base-muted">🔥 6-day streak</span>
       </div>
-      <div className="font-serif text-5xl leading-none mb-1">37</div>
+      <div className="font-bold tracking-tight text-5xl leading-none mb-1">37</div>
       <div className="text-[11px] text-base-muted mb-4">cars spotted</div>
       <div className="grid grid-cols-3 gap-1.5 mb-4">
         {cars.map((car, i) => (

@@ -26,8 +26,8 @@ export default function About() {
       <div ref={ref} className="reveal max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <p className="text-sm font-medium text-base-muted mb-4">About</p>
-          <h2 className="font-serif text-5xl md:text-6xl leading-none tracking-tight mb-8">
-            One person. <em className="text-base-muted">No roadmap theater.</em>
+          <h2 className="font-bold tracking-tight text-5xl md:text-6xl leading-none mb-8">
+            One person. No roadmap theater.
           </h2>
           <div className="flex flex-col gap-5 text-base-muted leading-relaxed max-w-md">
             <p>
@@ -45,7 +45,7 @@ export default function About() {
           {PRINCIPLES.map((p, i) => (
             <li key={p.title} className="border-t pt-5">
               <span className="font-mono text-xs text-base-muted">0{i + 1}</span>
-              <h3 className="font-serif text-2xl mt-2 mb-2">{p.title}</h3>
+              <h3 className="font-bold tracking-tight text-2xl mt-2 mb-2">{p.title}</h3>
               <p className="text-base-muted leading-relaxed">{p.body}</p>
             </li>
           ))}
