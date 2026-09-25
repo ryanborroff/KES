@@ -54,31 +54,48 @@ function KitchenWizz() {
 }
 
 function Boop() {
-  const cars = ['Red hatchback', 'Camper van', 'Yellow cab', 'Tow truck', 'Vintage Beetle', 'Fire engine']
+  const players = [
+    ['Jamie', 14],
+    ['Mum', 11],
+    ['Dad', 9],
+  ]
+  const cars = [
+    ['Mini Cooper', 1, 'Boop'],
+    ['Fiat 500', 2, 'Ciao'],
+    ['Jeep Wrangler', 3, 'Howdy'],
+    ['VW Beetle', 5, 'Hallo'],
+  ]
   return (
     <Phone>
       <div className="flex items-baseline justify-between mb-3">
-        <span className="text-xs font-semibold">My garage</span>
-        <span className="text-[11px] text-base-muted">🔥 6-day streak</span>
+        <span className="text-xs font-semibold">Game ABCD</span>
+        <span className="font-mono text-[11px] text-base-muted">06:42 left</span>
       </div>
-      <div className="font-bold tracking-tight text-5xl leading-none mb-1">37</div>
-      <div className="text-[11px] text-base-muted mb-4">cars spotted</div>
-      <div className="grid grid-cols-3 gap-1.5 mb-4">
-        {cars.map((car, i) => (
-          <div
-            key={car}
-            className="aspect-square rounded-lg border bg-base-bg flex items-end p-1.5 text-[10px] leading-tight"
-            style={i === 4 ? { borderColor: 'var(--accent)', boxShadow: '0 0 0 1px var(--accent)' } : undefined}
-          >
-            {car}
+      <div className="flex flex-col gap-1 mb-4">
+        {players.map(([name, score], i) => (
+          <div key={name} className="flex items-center gap-2 text-xs">
+            <span className="w-4 text-base-muted">{i + 1}</span>
+            <span className={i === 0 ? 'font-semibold' : ''}>{name}</span>
+            <span className="ml-auto font-semibold tabular-nums">{score}</span>
           </div>
         ))}
       </div>
-      <div
-        className="rounded-full py-3 text-center text-sm font-bold text-white"
-        style={{ backgroundColor: 'var(--accent)' }}
-      >
-        Boop!
+      <div className="grid grid-cols-2 gap-1.5 mb-4">
+        {cars.map(([name, points, phrase], i) => (
+          <div
+            key={name}
+            className={`rounded-xl border px-2.5 py-2.5 ${i === 0 ? 'text-white' : 'bg-base-bg'}`}
+            style={i === 0 ? { backgroundColor: 'var(--accent)', borderColor: 'var(--accent)' } : undefined}
+          >
+            <div className="text-[11px] font-semibold leading-tight">{name}</div>
+            <div className={`text-[10px] ${i === 0 ? 'opacity-90' : 'text-base-muted'}`}>
+              “{phrase}” · {points} pt{points > 1 ? 's' : ''}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="rounded-full py-2.5 text-center text-sm font-bold" style={{ color: 'var(--accent)' }}>
+        +1 Boop!
       </div>
     </Phone>
   )
