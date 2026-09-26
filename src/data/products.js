@@ -32,6 +32,9 @@ export const products = [
       { title: 'More to spot', detail: 'Classic is free. Farm, City and Vacation packs add tractors, fire engines and campers.' },
     ],
     cta: { label: 'Get the app', kind: 'appstore' },
+    screenshots: [
+      { src: '/products/boop/setup.webp', width: 924, height: 2000, alt: 'Boop setup screen: enter your name, pick a game pack and a game length, then start or join a game' },
+    ],
   },
   {
     id: 'eatlog',
