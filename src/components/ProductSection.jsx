@@ -1,5 +1,6 @@
 import { ProductIcon } from './Icons'
 import Vignette from './Vignettes'
+import Screenshots from './Screenshots'
 import useReveal from '../hooks/useReveal'
 
 export default function ProductSection({ product, index, total }) {
@@ -61,7 +62,7 @@ export default function ProductSection({ product, index, total }) {
 
         <div className={`lg:col-span-7 ${reversed ? 'lg:order-1' : ''}`}>
           <div className="accent-panel rounded-3xl px-5 py-12 sm:px-12 sm:py-16">
-            <Vignette product={product} />
+            {product.screenshots ? <Screenshots shots={product.screenshots} /> : <Vignette product={product} />}
           </div>
         </div>
       </div>

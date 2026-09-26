@@ -48,6 +48,12 @@ export const products = [
       { title: 'Ask your diary', detail: '“How much protein have I had today?” Answers from your own log.' },
     ],
     cta: { label: 'Get the app', kind: 'appstore' },
+    screenshots: [
+      { src: '/products/eatlog/onboarding.webp', width: 924, height: 2000, alt: 'EatLog onboarding: “Tell EatLog what you ate.”' },
+      { src: '/products/eatlog/today.webp', width: 924, height: 2000, alt: 'EatLog Today screen with calories, macros, water and a logged breakfast' },
+      { src: '/products/eatlog/insights.webp', width: 924, height: 2000, alt: 'EatLog Insights showing this week’s average daily calories, water and macros' },
+      { src: '/products/eatlog/insights-week-chart.webp', width: 2000, height: 924, alt: 'EatLog weekly charts of protein, carbs, fat, fibre and water against targets' },
+    ],
   },
   {
     id: 'chroma',
