@@ -4,7 +4,7 @@ export const products = [
   {
     id: 'kitchen-wizz',
     name: 'Kitchen Wizz',
-    accent: '#B35C24',
+    accent: '#006AAF',
     kind: 'Recipes & meal planning',
     platform: 'iOS',
     tagline: 'Every recipe you’ve saved, minus the life story.',
@@ -20,7 +20,7 @@ export const products = [
   {
     id: 'boop',
     name: 'Boop',
-    accent: '#B8446A',
+    accent: '#C25405',
     kind: 'Road trip game',
     platform: 'iOS',
     tagline: 'The car-spotting game for road trips.',
@@ -39,7 +39,7 @@ export const products = [
   {
     id: 'eatlog',
     name: 'EatLog',
-    accent: '#0F7A4F',
+    accent: '#4F7154',
     kind: 'Food diary',
     platform: 'iOS',
     tagline: 'Say it. We’ll log it.',
