@@ -1,5 +1,6 @@
 // Central product config — swap accent colors / copy here.
-// Accents are dark enough to carry white button text at WCAG AA.
+// Accents carry white text (icon tiles, vignettes) at WCAG AA. They don't
+// reach AA as text on the dark background, so don't use them for body text.
 export const products = [
   {
     id: 'kitchen-wizz',

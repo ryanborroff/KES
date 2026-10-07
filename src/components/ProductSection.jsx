@@ -61,10 +61,10 @@ export default function ProductSection({ product, index, total }) {
             {product.website && (
               <a
                 href={product.website}
-                className="text-sm font-semibold underline underline-offset-4"
+                className="text-sm font-semibold underline decoration-2 underline-offset-4 hover:text-base-muted transition-colors"
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: product.accent }}
+                style={{ textDecorationColor: product.accent }}
               >
                 {product.websiteLabel ?? 'Visit website'}
               </a>
