@@ -12,7 +12,7 @@ export default function Header({ theme, setTheme }) {
   const active = useActiveSection(NAV_IDS)
 
   return (
-    <header className="sticky top-0 z-20 border-b bg-base-bg/85 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b backdrop-blur" style={{ backgroundColor: 'color-mix(in srgb, var(--color-bg) 85%, transparent)' }}>
       <nav className="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-16">
         <a href="#top" className="text-lg font-bold tracking-tight">
           Kind Enough Studio
