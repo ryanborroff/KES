@@ -39,7 +39,10 @@ export default function ProductSection({ product, index, total }) {
             {product.name}
           </h2>
           <p className="text-xl md:text-2xl leading-snug mb-5">{product.tagline}</p>
-          <p className="text-base-muted leading-relaxed mb-10">{product.description}</p>
+          <p className="text-base-muted leading-relaxed mb-6">{product.description}</p>
+          {product.note && (
+            <p className="font-medium leading-relaxed mb-10">{product.note}</p>
+          )}
 
           <dl className="border-t mb-10">
             {product.features.map((f) => (
@@ -50,12 +53,25 @@ export default function ProductSection({ product, index, total }) {
             ))}
           </dl>
 
-          <span
-            className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold"
-            style={{ borderColor: product.accent, color: product.accent }}
-          >
-            {product.status}
-          </span>
+          <div className="flex flex-wrap items-center gap-4">
+            <span
+              className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold"
+              style={{ borderColor: product.accent, color: product.accent }}
+            >
+              {product.status}
+            </span>
+            {product.website && (
+              <a
+                href={product.website}
+                className="text-sm font-semibold underline underline-offset-4"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: product.accent }}
+              >
+                {product.websiteLabel ?? 'Visit website'}
+              </a>
+            )}
+          </div>
         </div>
 
         <div className={`lg:col-span-7 ${reversed ? 'lg:order-1' : ''}`}>
