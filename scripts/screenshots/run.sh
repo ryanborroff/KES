@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Capture marketing screenshots of JOMO's apps.
+# Capture marketing screenshots of Kind Enough Studio's apps.
 #
 #   ./run.sh                 # all apps
 #   ./run.sh kitchenwizz boop eatlog chroma

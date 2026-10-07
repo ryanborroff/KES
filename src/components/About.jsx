@@ -31,12 +31,11 @@ export default function About() {
           </h2>
           <div className="flex flex-col gap-5 text-base-muted leading-relaxed max-w-md">
             <p>
-              JOMO is one person building software they actually want to use, then shipping it in case someone
+              Kind Enough Studio is one person building software they actually want to use, then shipping it in case someone
               else does too.
             </p>
             <p>
-              The name is short for the joy of missing out. It’s a bet that software can be useful without being
-              loud, and that doing less, carefully, beats doing everything, poorly.
+              It’s a bet that software can be useful without being loud, and that doing less, carefully, beats doing everything, poorly.
             </p>
           </div>
         </div>
