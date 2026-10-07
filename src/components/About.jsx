@@ -6,8 +6,8 @@ const PRINCIPLES = [
     body: 'Features get added when they earn their place, not because a competitor shipped them first.',
   },
   {
-    title: 'Nothing to configure',
-    body: 'Sensible defaults over settings screens. If it needs a tutorial, it isn’t finished.',
+    title: 'Sensible by default',
+    body: 'Sensible defaults over settings screens. If something needs explaining, it probably needs simplifying.',
   },
   {
     title: 'No dark patterns',
@@ -23,7 +23,7 @@ export default function About() {
   const ref = useReveal()
   return (
     <section id="about" className="border-t bg-base-surface">
-      <div ref={ref} className="reveal max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div ref={ref} className="reveal max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <p className="text-sm font-medium text-base-muted mb-4">About</p>
           <h2 className="font-bold tracking-tight text-5xl md:text-6xl leading-none mb-8">
@@ -31,7 +31,7 @@ export default function About() {
           </h2>
           <div className="flex flex-col gap-5 text-base-muted leading-relaxed max-w-md">
             <p>
-              Kind Enough Studio is one person building software they actually want to use, then shipping it in case someone
+              Kind Enough Studio is one person building software I actually want to use, then shipping it in case someone
               else does too.
             </p>
             <p>

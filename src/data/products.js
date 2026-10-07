@@ -15,7 +15,7 @@ export const products = [
       { title: 'Plan the week', detail: 'Drag recipes onto days, get one combined shopping list.' },
       { title: 'Cook offline', detail: 'Your recipe box lives on your phone, not just in the cloud.' },
     ],
-    cta: { label: 'Get the app', kind: 'appstore' },
+    status: 'TestFlight beta',
   },
   {
     id: 'boop',
@@ -31,7 +31,7 @@ export const products = [
       { title: 'Rarer cars score more', detail: 'A Mini is worth 1 point. A Nissan Cube is worth 10.' },
       { title: 'More to spot', detail: 'Classic is free. Farm, City and Vacation packs add tractors, fire engines and campers.' },
     ],
-    cta: { label: 'Get the app', kind: 'appstore' },
+    status: 'TestFlight beta',
     screenshots: [
       { src: '/products/boop/setup.webp', width: 924, height: 2000, alt: 'Boop setup screen: enter your name, pick a game pack and a game length, then start or join a game' },
     ],
@@ -50,7 +50,7 @@ export const products = [
       { title: 'Fix it by talking', detail: 'Say “actually it was tuna” to correct an entry. No delete and re-log.' },
       { title: 'Ask your diary', detail: '“How much protein have I had today?” Answers from your own log.' },
     ],
-    cta: { label: 'Get the app', kind: 'appstore' },
+    status: 'TestFlight beta',
     screenshots: [
       { src: '/products/eatlog/onboarding.webp', width: 924, height: 2000, alt: 'EatLog onboarding: “Tell EatLog what you ate.”' },
       { src: '/products/eatlog/today.webp', width: 924, height: 2000, alt: 'EatLog Today screen with calories, macros, water and a logged breakfast' },
@@ -72,6 +72,6 @@ export const products = [
       { title: 'High-bitrate playback', detail: 'Streaming tuned for grade-critical review, not just watching.' },
       { title: 'Access you control', detail: 'Expiring links, watermarks and download rights per client.' },
     ],
-    cta: { label: 'Start a project', kind: 'signup' },
+    status: 'Prototype',
   },
 ]
