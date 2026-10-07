@@ -7,7 +7,7 @@ const PRINCIPLES = [
   },
   {
     title: 'Sensible by default',
-    body: 'Sensible defaults over settings screens. If something needs explaining, it probably needs simplifying.',
+    body: 'Good defaults over settings screens. If something needs explaining, it probably needs simplifying.',
   },
   {
     title: 'No dark patterns',
@@ -31,7 +31,7 @@ export default function About() {
           </h2>
           <div className="flex flex-col gap-5 text-base-muted leading-relaxed max-w-md">
             <p>
-              Kind Enough Studio is one person building software I actually want to use, then shipping it in case someone
+              Kind Enough Studio is a one-person software studio. I build software I actually want to use, then ship it in case someone
               else does too.
             </p>
             <p>
