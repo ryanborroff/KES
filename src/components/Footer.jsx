@@ -1,9 +1,8 @@
-import { GithubIcon, XIcon } from './Icons'
+import { GithubIcon } from './Icons'
 import { products } from '../data/products'
 
 const SOCIALS = [
   { href: 'https://github.com/ryanborroff', label: 'GitHub', Icon: GithubIcon },
-  { href: 'https://x.com/jomo', label: 'X / Twitter', Icon: XIcon },
 ]
 
 export default function Footer() {
@@ -16,12 +15,12 @@ export default function Footer() {
           Questions, bug reports, or a feature you think earns its place. Every email gets read by the person who
           wrote the code.
         </p>
-        <div className="flex flex-wrap items-center gap-4 mb-20 md:mb-28">
+        <div className="flex flex-wrap items-center gap-4 mb-6">
           <a
-            href="mailto:hello@jomo.io"
+            href="mailto:hello@kindenoughstudio.com"
             className="inline-flex items-center gap-2 rounded-full bg-base-fg text-base-bg px-6 py-3.5 text-sm font-semibold hover:opacity-90 transition-opacity"
           >
-            hello@jomo.io <span aria-hidden="true">→</span>
+            hello@kindenoughstudio.com <span aria-hidden="true">→</span>
           </a>
           {SOCIALS.map(({ href, label, Icon }) => (
             <a
@@ -36,9 +35,18 @@ export default function Footer() {
             </a>
           ))}
         </div>
+        <p className="text-sm text-base-muted mb-20 md:mb-28">
+          Need help with an app?{' '}
+          <a
+            href="mailto:support@kindenoughstudio.com"
+            className="font-medium text-base-fg underline underline-offset-4 hover:text-base-muted transition-colors"
+          >
+            support@kindenoughstudio.com
+          </a>
+        </p>
 
         <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6 border-t text-sm text-base-muted">
-          <span>&copy; {new Date().getFullYear()} JOMO</span>
+          <span>&copy; {new Date().getFullYear()} Kind Enough Studio</span>
           <span>{products.map((p) => p.name).join(' · ')}</span>
         </div>
       </div>

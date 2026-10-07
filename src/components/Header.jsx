@@ -15,7 +15,7 @@ export default function Header({ theme, setTheme }) {
     <header className="sticky top-0 z-20 border-b bg-base-bg/85 backdrop-blur">
       <nav className="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-16">
         <a href="#top" className="text-sm font-bold tracking-tight">
-          JOMO
+          Kind Enough Studio
         </a>
         <div className="flex items-center gap-6 sm:gap-8">
           <div className="hidden sm:flex items-center gap-8 text-sm font-medium">
