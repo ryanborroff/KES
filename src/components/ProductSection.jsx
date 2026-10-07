@@ -50,12 +50,8 @@ export default function ProductSection({ product, index, total }) {
             ))}
           </dl>
 
-          <span
-            className="inline-flex items-center gap-2 text-sm font-medium text-base-muted"
-          >
+          <span className="inline-flex items-center gap-2 text-sm font-medium text-base-muted">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: product.accent }} aria-hidden="true" />
-            <span
-          >
             {product.status}
           </span>
         </div>
