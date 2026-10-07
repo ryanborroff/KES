@@ -7,14 +7,17 @@ export const products = [
     accent: '#006AAF',
     kind: 'Recipes & meal planning',
     platform: 'iOS',
-    tagline: 'Every recipe you’ve saved, minus the life story.',
+    tagline: 'Your kitchen. Organised.',
     description:
-      'Paste a link from anywhere and get a clean recipe card. Drop recipes onto the week, and the shopping list writes itself.',
+      'Save recipes from anywhere. Paste a link, snap a photo, or copy and paste recipe text, and Kitchen Wizz turns it into a clean, searchable recipe card.',
     features: [
-      { title: 'Save from the web', detail: 'Just the ingredients and the steps. No ads, no scrolling.' },
-      { title: 'Plan the week', detail: 'Drag recipes onto days, get one combined shopping list.' },
-      { title: 'Cook offline', detail: 'Your recipe box lives on your phone, not just in the cloud.' },
+      { title: 'Recipes', detail: 'Save recipes from anywhere and keep them together in one searchable library.' },
+      { title: 'Meal planning', detail: 'Plan your week, adjust servings and let your grocery list build itself.' },
+      { title: 'Pantry & groceries', detail: 'Keep track of what you already have and shop for what you actually need.' },
     ],
+    note: 'No ads. No recipe life stories. Just your recipes, organised.',
+    website: 'https://kitchenwizz-marketing-production.up.railway.app/',
+    websiteLabel: 'Explore Kitchen Wizz',
     status: 'TestFlight beta',
   },
   {
