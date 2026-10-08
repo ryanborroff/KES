@@ -9,11 +9,11 @@ export const products = [
     platform: 'iOS',
     tagline: 'Your kitchen. Organised.',
     description:
-      'Save recipes from anywhere. Paste a link, snap a photo, or copy and paste recipe text, and Kitchen Wizz turns it into a clean, searchable recipe card.',
+      'Save recipes from anywhere. Paste a link, snap a photo or copy and paste text. Kitchen Wizz turns it into a clean, searchable recipe card. Convert measurements, adjust servings, plan your meals and build your grocery list automatically. Everything you need to cook, without the clutter.',
     features: [
-      { title: 'Recipes', detail: 'Save recipes from anywhere and keep them together in one searchable library.' },
-      { title: 'Meal planning', detail: 'Plan your week, adjust servings and let your grocery list build itself.' },
-      { title: 'Pantry & groceries', detail: 'Keep track of what you already have and shop for what you actually need.' },
+      { title: 'Recipes', detail: 'Save recipes from websites, photos or text. Find what you need without scrolling through someone else’s life story.' },
+      { title: 'Meal planning', detail: 'Decide what you’re cooking, adjust the portions and let Kitchen Wizz work out what you need.' },
+      { title: 'Pantry & groceries', detail: 'See what you’ve got, find recipes you can make and avoid buying ingredients twice.' },
     ],
     note: 'No ads. No recipe life stories. Just your recipes, organised.',
     website: 'https://kitchenwizz-marketing-production.up.railway.app/',
@@ -28,7 +28,7 @@ export const products = [
     platform: 'iOS',
     tagline: 'The car-spotting game for road trips.',
     description:
-      'Everyone joins on their own phone. Spot a Mini, shout “Boop!” and tap to score. Rarer cars are worth more, and whoever’s ahead when the timer runs out wins.',
+      'Everyone joins on their own phone. Spot a Mini, shout “Boop!” and tap to score. The rarer the car, the more points you earn. Whoever has the most points when time runs out wins.',
     features: [
       { title: 'Play together', detail: 'Join with a game code, one phone each. No signal? It plays offline solo.' },
       { title: 'Rarer cars score more', detail: 'A Mini is worth 1 point. A Nissan Cube is worth 10.' },
@@ -47,11 +47,11 @@ export const products = [
     platform: 'iOS',
     tagline: 'Say it. We’ll log it.',
     description:
-      'A voice-first food diary. Tap the mic, say what you ate in your own words, and EatLog works out the calories and macros. No database searching, weighing every ingredient or typing it all out.',
+      'A food diary you can talk to. Just say what you’ve eaten and EatLog estimates the calories, protein, carbs and fat. No searching through food databases or entering every ingredient by hand. Review your meals, track your progress and ask questions about what you’ve eaten.',
     features: [
       { title: 'Just say it', detail: '“Two eggs, sourdough with butter and a flat white.” Logged in seconds.' },
       { title: 'Fix it by talking', detail: 'Say “actually it was tuna” to correct an entry. No delete and re-log.' },
-      { title: 'Ask your diary', detail: '“How much protein have I had today?” Answers from your own log.' },
+      { title: 'Ask your diary', detail: 'Ask how much protein you’ve eaten and get answers from your own food log.' },
     ],
     status: 'TestFlight beta',
     screenshots: [
@@ -67,13 +67,13 @@ export const products = [
     accent: '#3B6FA0',
     kind: 'Video review & delivery',
     platform: 'Web',
-    tagline: 'Client review for filmmakers, at full quality.',
+    tagline: 'A better way to review and deliver films.',
     description:
-      'Share cuts that look the way you graded them. Clients leave notes on the exact frame, and you stay in control of who sees and downloads what.',
+      'Chroma is a prototype for filmmakers to review cuts, collect frame-specific feedback and deliver films to clients. The aim is high-quality playback, clear feedback and control over access.',
     features: [
-      { title: 'Frame-accurate notes', detail: 'Timecoded comments and stacked versions. No re-uploads for one note.' },
-      { title: 'High-bitrate playback', detail: 'Streaming tuned for grade-critical review, not just watching.' },
-      { title: 'Access you control', detail: 'Expiring links, watermarks and download rights per client.' },
+      { title: 'Frame-accurate notes', detail: 'Planned: comments on specific frames and feedback organised across versions.' },
+      { title: 'High-bitrate playback', detail: 'Planned: high-quality streaming designed to preserve visual detail.' },
+      { title: 'Access you control', detail: 'Planned: private sharing and control over client access and downloads.' },
     ],
     status: 'Prototype',
   },
