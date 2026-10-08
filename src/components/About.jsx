@@ -15,7 +15,7 @@ const PRINCIPLES = [
   },
   {
     title: 'Answerable to users',
-    body: 'No investors, no growth targets. Bugs get fixed because they’re bugs.',
+    body: 'Decisions are made for the people using the software, not to satisfy an engagement dashboard.',
   },
 ]
 
