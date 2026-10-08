@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 
+// Returns the id of the section crossing the middle of the viewport. Pass
+// a stable (module-level) array; the effect re-subscribes when it changes.
 export default function useActiveSection(ids) {
-  const [active, setActive] = useState(ids[0])
+  const [active, setActive] = useState(null)
 
   useEffect(() => {
     const elements = ids.map((id) => document.getElementById(id)).filter(Boolean)
